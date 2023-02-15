@@ -10,7 +10,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<UsuarioContext>(options =>
 {
-    options.UseSqlServer("Server=DESKTOP-L16RAUT/DBAPJ; Database=cruddb; User Id=dbacrud; password=cruddb");
+    options.UseSqlServer();
 });
 
 var app = builder.Build();
